@@ -1,21 +1,24 @@
 import styled from 'styled-components'
+import { BrowserRouter, useNavigate, useParams } from "react-router-dom";
 
 export function TopBar() {
-    return <BarContainer>
-        <BarContainerRight>
-          <BarContainerElement>Elliot Potter</BarContainerElement>
-          <BarContainerElement>Work</BarContainerElement>
-          <BarContainerElement>Academics</BarContainerElement>
-          <BarContainerElement>Volunteering</BarContainerElement>
-          <BarContainerElement>Fun</BarContainerElement>
-        </BarContainerRight>
-    </BarContainer>
+  const navigate = useNavigate();
+
+  return <BarContainer>
+      <BarContainerRight>
+        <BarContainerElement onClick={() => navigate('/')}>Elliot Potter</BarContainerElement>
+        <BarContainerElement>Work</BarContainerElement>
+        <BarContainerElement>Academics</BarContainerElement>
+        <BarContainerElement>Volunteering</BarContainerElement>
+        <BarContainerElement>Fun</BarContainerElement>
+      </BarContainerRight>
+  </BarContainer>
 }
 
 export const BarContainer = styled.div`
   padding-top: 15px;
   padding-bottom: 15px;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   background-color: white;
   display: flex;
@@ -34,4 +37,5 @@ export const BarContainerRight = styled.div`
 
 export const BarContainerElement = styled.div`
   margin-left: 40px;
+  cursor: pointer;
 `

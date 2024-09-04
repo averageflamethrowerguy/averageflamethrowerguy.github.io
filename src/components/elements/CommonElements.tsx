@@ -25,6 +25,9 @@ export const LeftText = styled.div`
     padding: 5px;
     padding-left: 80px;
     border-radius: 0px 5px 5px 0px;
+    box-shadow: 5px 5px 2px lightblue;
+    border: 2px solid lightgrey;
+    background-color: white;
 `
 
 export const RightText = styled.div`
@@ -39,6 +42,9 @@ export const RightText = styled.div`
     padding: 5px;
     padding-right: 80px;
     border-radius: 5px 0px 0px 5px;
+    box-shadow: 5px 5px 2px lightblue;
+    border: 2px solid lightgrey;
+    background-color: white;
 `
 
 export const TextHeader = styled.div`

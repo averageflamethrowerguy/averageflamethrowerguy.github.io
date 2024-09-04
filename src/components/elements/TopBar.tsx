@@ -6,7 +6,10 @@ export function TopBar() {
 
   return <BarContainer>
       <BarContainerRight>
-        <BarContainerElement onClick={() => navigate('/')}>Elliot Potter</BarContainerElement>
+        <BarContainerElement onClick={() => {
+          navigate('/')
+          document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }}>Elliot Potter</BarContainerElement>
         <BarContainerElement>Work</BarContainerElement>
         <BarContainerElement>Academics</BarContainerElement>
         <BarContainerElement>Volunteering</BarContainerElement>

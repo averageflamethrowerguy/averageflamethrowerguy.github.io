@@ -6,7 +6,7 @@ import { CredentialsPanel } from "./CredentialsPanel";
 import ib_logo from "../../ib_logo.png"
 import dartmouth_logo from "../../dartmouth_logo.png"
 import qbraid_logo from "../../qbraid_logo.png"
-// import dyson_sphere from "../../dyson_sphere.webp"
+import dyson_sphere from "../../dyson_sphere.webp"
 
 export function Home() {
     let authState = useSelector((state: any) => state.auth)
@@ -16,7 +16,12 @@ export function Home() {
     return (
     <div>
        <TopBar />
-
+        {
+            // <img src={dyson_sphere} style={{position: "fixed", left: 0, top: 0, zIndex: -5, scale: 5,
+            // width: "calc(100vh * 1.78)", height: "100vh"
+        // }} />
+        }
+        
 
        <BodyContainer>
         <div>
@@ -32,7 +37,10 @@ export function Home() {
 
             <TextHeader>My Story</TextHeader>
             <div>
-                <LeftText onClick={() => navigate('/academics')}>
+                <LeftText onClick={() => {
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    navigate('/academics')
+                }}>
                     I grew up in Seattle, WA and studied at Ingraham High School, and later at North Seattle College. 
                     I led the school team in the FIRST FTC Robotics challenge, and completed the International Baccaleareate (IB) program.
                     
@@ -41,7 +49,10 @@ export function Home() {
                     </ImageContainer>
                 </LeftText>
 
-                <RightText onClick={() => navigate('/academics')}>
+                <RightText onClick={() => {
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    navigate('/academics')
+                    }}>
                     <ImageContainer>
                         <img src={dartmouth_logo} style={{width: 100, height: 60, marginRight: -20, marginLeft: -20}} />
                     </ImageContainer>
@@ -51,7 +62,10 @@ export function Home() {
                     pandemic would pose to maintaining a high-quality education, I made the decision to temporarily withdraw from college.
                 </RightText>
 
-                <LeftText  onClick={() => navigate('/qbraid')}>
+                <LeftText  onClick={() => {
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    navigate('/qbraid')
+                    }}>
                     I continued my education by taking Harvard's online computer science courses. In June, I co-founded a quantum computing startup with a 
                     team of quantum computing and computer science students. At qBraid, I played a key role in developing the company's backend infrastructure, 
                     landing page, login systems, analytics platform, and quantum learning platform—components that continue to support the company years later. 
@@ -63,7 +77,10 @@ export function Home() {
                     </ImageContainer>
                 </LeftText>
 
-                <RightText onClick={() => navigate('/yaynay')}>
+                <RightText onClick={() => {
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    navigate('/yaynay')
+                }}>
                     During this time, I also joined YayNay, a voter engagement platform co-founded by my best friend, Jared Heath. I optimized YayNay's texting 
                     and backend infrastructure, enabling it to handle a significant increase in website traffic without substantially raising costs. These 
                     enhancements later proved valuable as YayNay sought to attract high-profile clients.

@@ -4,7 +4,7 @@ import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from
 export function QbraidLogin() {
     return (
         <IndividualProject onClick={() => window.location.href = "https://account.qbraid.com"}>
-                <CredentialsHeader>Login & Account Management</CredentialsHeader>
+                <CredentialsHeader>qBraid: Login & Account Management</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>
@@ -22,7 +22,9 @@ export function QbraidLogin() {
                             <div>HTML</div>
                             <div>CSS</div>
                             <div>Javascript</div>
+                            <div>Typescript</div>
                             <div>React</div>
+                            <div>Express</div>
                             <div>AWS</div>
                         </div>
                     </ProjectElement>

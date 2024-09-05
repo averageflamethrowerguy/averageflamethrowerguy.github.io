@@ -4,7 +4,7 @@ import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from
 export function YayNayTextingEmailing() {
     return (
         <IndividualProject>
-                <CredentialsHeader>Mass Texting & Emailing</CredentialsHeader>
+                <CredentialsHeader>YayNay: Mass Texting & Emailing</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>

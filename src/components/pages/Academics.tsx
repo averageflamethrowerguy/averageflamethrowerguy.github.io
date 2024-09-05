@@ -186,7 +186,7 @@ export function Academics() {
                         <ProjectDescription style={{marginLeft: 0}}>
                             <CredentialsSubHeader>Description</CredentialsSubHeader>
                             <div>
-                                This class taught the basics of robotics, including localization and sensing techniques, motion planning, and managing uncertainty. I lead 
+                                This class taught the basics of robotics, including localization and sensing techniques, motion planning, and managing uncertainty. I led 
                                 a four-person team in creating a search-and-destroy robot, which would take a known map of a closed patrol area, compute an optimal shortest-path 
                                 route to traverse the entire patrol area, patrol the route, and chase and ram any anomalous objects in the area.
                             </div>

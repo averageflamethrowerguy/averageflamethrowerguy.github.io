@@ -4,7 +4,7 @@ import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from
 export function QbraidJLab() {
     return (
         <IndividualProject onClick={() => window.location.href = "https://lab.qbraid.com"}>
-                <CredentialsHeader>JupyterLab Backend</CredentialsHeader>
+                <CredentialsHeader>qBraid: JupyterLab Backend</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>

@@ -70,6 +70,7 @@ export const ProjectContainer = styled.div`
 
 export const IndividualProject = styled.div`
     padding: 5px;
+    padding-left: 10px;
     margin: -5px;
     margin-top: 15px;
     border-radius: 5px;
@@ -79,7 +80,8 @@ export const IndividualProject = styled.div`
     &:hover {
         background-color: rgba(0, 0, 0, 0.03);
     }
-    max-width: 450px;`
+    max-width: 450px;
+    `
 
 export const ProjectDescription = styled.div`
     width: calc(100% - 150px);

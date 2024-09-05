@@ -4,7 +4,7 @@ import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from
 export function Qbook() {
     return (
         <IndividualProject onClick={() => window.location.href = "https://qbook.qbraid.com"}>
-                <CredentialsHeader>qBook</CredentialsHeader>
+                <CredentialsHeader>qBraid: qBook</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>
@@ -23,6 +23,7 @@ export function Qbook() {
                             <div>Javascript</div>
                             <div>NodeJS</div>
                             <div>Typescript</div>
+                            <div>Express</div>
                             <div>React</div>
                             <div>AWS</div>
                             <div>Kubernetes</div>

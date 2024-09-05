@@ -4,7 +4,7 @@ import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from
 export function YayNaySurveys() {
     return (
         <IndividualProject>
-                <CredentialsHeader>YayNay Surveys</CredentialsHeader>
+                <CredentialsHeader>YayNay: Surveys</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>

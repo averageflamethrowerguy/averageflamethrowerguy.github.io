@@ -9,7 +9,7 @@ export function QbraidLanding() {
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>
                         <div>
-                            The landing page is the first page accessable on <a href="https://qbraid.com">https://qbraid.com</a>.
+                            The landing page is the first page accessible on <a href="https://qbraid.com">https://qbraid.com</a>.
                             When at qBraid, I built pages showcasing our educational and research product offerings, as well as 
                             our career page.
                         </div>

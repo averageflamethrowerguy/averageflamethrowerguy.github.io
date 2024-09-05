@@ -1,26 +1,24 @@
 import { IndividualProject, ProjectDescription, ProjectElement } from "../elements/CommonElements";
 import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from "../pages/CredentialsPanel";
 
-export function RayTracer() {
+export function HiddenMarkov() {
     return (
-        <IndividualProject onClick={() => window.location.href = "https://github.com/BoxianWang/cs77-final-project"}>
-                <CredentialsHeader>Dartmouth: GPU Ray Tracing</CredentialsHeader>
+        <IndividualProject onClick={() => alert("This repository is not public! Please email elliotpotter496@gmail.com for access")}>
+                <CredentialsHeader>Dartmouth: Hidden Markov Model</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>
                         <div>
-                                I led a team of three people in implementing ray tracing using CUDA on an RTX 3080.
-                                Using a source that provided us a basis in C++, we first wrote a naive CUDA implementation, and then worked on further 
-                                performance improvements. We ultimately were able to achieve a 2000x speedup over a naive C++ implementation.
+                            I led a team of two people to create a Hidden Markov Model in Java to identify parts-of-speech in 
+                            input text. We found our model had fairly good performance on data similar to the training set, but 
+                            performance fell off with more novel textual data.
                         </div>
                     </ProjectDescription>
 
                     <ProjectElement>
                         <CredentialsSubHeader>Technologies</CredentialsSubHeader>
                         <div>
-                            <div>Ray Tracing</div>
-                            <div>CUDA</div>
-                            <div>C++</div>
+                                <div>Java</div>
                         </div>
                     </ProjectElement>
                 </CredentialsSubcontainer>

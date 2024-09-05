@@ -1,26 +1,25 @@
 import { IndividualProject, ProjectDescription, ProjectElement } from "../elements/CommonElements";
 import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from "../pages/CredentialsPanel";
 
-export function RayTracer() {
+export function MIDIConverter() {
     return (
-        <IndividualProject onClick={() => window.location.href = "https://github.com/BoxianWang/cs77-final-project"}>
-                <CredentialsHeader>Dartmouth: GPU Ray Tracing</CredentialsHeader>
+        <IndividualProject onClick={() => alert("This repository is not public! Please ask me for access at elliotpotter496@gmail.com")}>
+                <CredentialsHeader>Dartmouth: MIDI Keyboard Converter</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>
                         <div>
-                                I led a team of three people in implementing ray tracing using CUDA on an RTX 3080.
-                                Using a source that provided us a basis in C++, we first wrote a naive CUDA implementation, and then worked on further 
-                                performance improvements. We ultimately were able to achieve a 2000x speedup over a naive C++ implementation.
+                                I led a team of two people in creating a MIDI keyboard converter. We used a Field Programmable Gate Array 
+                                (FPGA), programmed in VHDL. This device is programmed to take MIDI keyboard signals and convert them into 
+                                signals that can be used to generate a tone by an analog speaker.
                         </div>
                     </ProjectDescription>
 
                     <ProjectElement>
                         <CredentialsSubHeader>Technologies</CredentialsSubHeader>
                         <div>
-                            <div>Ray Tracing</div>
-                            <div>CUDA</div>
-                            <div>C++</div>
+                            <div>Digital Logic</div>
+                            <div>VHDL</div>
                         </div>
                     </ProjectElement>
                 </CredentialsSubcontainer>

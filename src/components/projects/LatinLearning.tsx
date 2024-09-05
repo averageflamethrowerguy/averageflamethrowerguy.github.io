@@ -1,32 +1,29 @@
 import { IndividualProject, ProjectDescription, ProjectElement } from "../elements/CommonElements";
 import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from "../pages/CredentialsPanel";
 
-export function QbraidJLab() {
+export function LatinLearning() {
     return (
-        <IndividualProject onClick={() => window.location.href = "https://lab.qbraid.com"}>
-                <CredentialsHeader>qBraid: JupyterLab Backend</CredentialsHeader>
+        <IndividualProject onClick={() => window.location.href = "https://github.com/averageflamethrowerguy/latin-learning-frontend"}>
+                <CredentialsHeader>Personal: Latin Learning</CredentialsHeader>
                 <CredentialsSubcontainer>
                     <ProjectDescription style={{marginLeft: 0}}>
                         <CredentialsSubHeader>Description</CredentialsSubHeader>
                         <div>
-                            Our Lab platorm <a href="https://lab.qbraid.com">https://lab.qbraid.com</a> is a web-accessible, preconfigured 
-                            version of Jupyterlab intentended for use by quantum researchers.
-                            I deployed JupyterHub on Kubernetes as the backend for our Lab platform. I then customized the 
-                            deployment to increase uptime, allow alternative code 
-                            execution kernels, and improve login flow.
+                            I've always struggled learning both spoken and written languages. At Dartmouth, I signed up to learn Latin. To 
+                            improve my vocabulary and grammar comprehension, I built a simple React app where I learned Latin words with modern
+                            techniques such as spaced repetition. This learning strategy was extremely effective, as I aced virtually all 
+                            grammar quizzes and got top-quartile grades in most tests, despite having a harder time understanding the language 
+                            than my peers.
                         </div>
                     </ProjectDescription>
 
                     <ProjectElement>
                         <CredentialsSubHeader>Technologies</CredentialsSubHeader>
                         <div>
-                            <div>Kubernetes</div>
-                            <div>Docker</div>
                             <div>HTML</div>
                             <div>CSS</div>
                             <div>Javascript</div>
-                            <div>AWS</div>
-                            <div>EKS</div>
+                            <div>React</div>
                         </div>
                     </ProjectElement>
                 </CredentialsSubcontainer>

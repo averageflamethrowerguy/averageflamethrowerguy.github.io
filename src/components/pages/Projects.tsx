@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BodyContainer, MiddleContainer, ProjectContainer, TextHeader } from "../elements/CommonElements";
+import { BodyContainer, MiddleContainer, ProjectContainer, ProjectElement, TextHeader } from "../elements/CommonElements";
 import { TopBar } from "../elements/TopBar";
 import styled from 'styled-components'
 import { Qbook } from "../projects/qBook";
@@ -14,6 +14,16 @@ import { SearchAndDestroy } from "../projects/SearchAndDestroy";
 import { MazeEscaper } from "../projects/MazeEscaper";
 import { IntrusionDetection } from "../projects/IntrusionDetection";
 import { RayTracer } from "../projects/RayTracer";
+import { MIDIConverter } from "../projects/MIDIConverter";
+import { NuggetsGame } from "../projects/NuggetsGame";
+import { TinySearchEngine } from "../projects/TinySearchEngine";
+import { NameAnagrams } from "../projects/NuggetsGame copy";
+import { ProjectEuler } from "../projects/ProjectEuler";
+import { Rizzly } from "../projects/Rizzly";
+import { LatinLearning } from "../projects/LatinLearning";
+import { NimbleBall } from "../projects/NimbleBall";
+import { NimbleMessaging } from "../projects/NimbleMessaging";
+import { HiddenMarkov } from "../projects/HiddenMarkov";
 
 interface Project {
     object: any,
@@ -40,6 +50,46 @@ export function Projects() {
     }
 
     const projects = [
+        {
+            object: <HiddenMarkov />,
+            flags: ["Java"],
+        },
+        {
+            object: <NimbleMessaging />,
+            flags: ["HTML", "CSS", "Javascript", "Typescript", "React", "Go", "Docker", "Kubernetes", "MongoDB"],
+        },
+        {
+            object: <NimbleBall />,
+            flags: ["Python", "OpenCV", "Multiprocessing","Multithreading", "Docker", "Kubernetes"],
+        },
+        {
+            object: <LatinLearning />,
+            flags: ["HTML", "Javascript", "React","CSS"],
+        },
+        {
+            object: <Rizzly />,
+            flags: ["HTML", "Javascript", "Typescript", "React", "AWS", "CSS", "Express", "MongoDB"],
+        },
+        {
+            object: <ProjectEuler />,
+            flags: ["C", "C++", "CUDA", "D", "Rust", "Cobol"],
+        },
+        {
+            object: <NameAnagrams />,
+            flags: ["Java"]
+        },
+        {
+            object: <TinySearchEngine />,
+            flags: ["C"]
+        },
+        {
+            object: <NuggetsGame />,
+            flags: ["C"]
+        },
+        {
+            object: <MIDIConverter />,
+            flags: ["VHDL", "Digital Logic"]
+        },
         {
             object: <RayTracer />,
             flags: ["C++", "CUDA", "Ray Tracing"]
@@ -122,7 +172,7 @@ export function Projects() {
                             <ProjectFilterHeader>Language</ProjectFilterHeader>
                             <ProjectFilterBody>
                                 {
-                                    ["Javascript", "Typescript", "C", "C++", "Go", "Java", "CUDA", "Assembly", "VHDL", "HTML", "CSS"].map(filter => {
+                                    ["Javascript", "Typescript", "Python", "C", "C++", "Go", "Java", "CUDA", "Assembly", "VHDL", "HTML", "CSS"].map(filter => {
                                         return (
                                             <ProjectFilterElement>
                                                 <ProjectFilterCheckbox onClick={() => modifyFilters(filter)} />

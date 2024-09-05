@@ -45,10 +45,10 @@ export function CredentialsPanel() {
                                 Javascript,</Skill> <Skill  onClick={() => window.location.href="https://github.com/perfect10-dating/perfect10-frontend"}>
                                 Typescript,</Skill> <Skill  onClick={() => window.location.href="https://github.com/isaac-400/cs81-final"}>
                                 Python,</Skill> <Skill  onClick={() => window.location.href="https://github.com/averageflamethrowerguy/current_chungus"}>
-                                C,</Skill> <Skill  onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
-                                [TODO] C++,</Skill> <Skill  onClick={() => alert("I wrote a web server in Go, but it's not public! Email me at elliotpotter496@gmail.com, and I'll add you to the repository!")}>
-                                *Go,</Skill> <Skill  onClick={() => alert("I wrote a hidden Markov model in Java, but it's not public! Email me at elliotpotter496@gmail.com, and I'll add you to the repository!")}>
-                                *Java,</Skill> <Skill onClick={() => window.location.href="https://github.com/BoxianWang/cs77-final-project"}>
+                                C,</Skill> <Skill  onClick={() => alert("The C++ project is not public! Email me at elliotpotter496@gmail.com to ask me for access.")}>
+                                *C++,</Skill> <Skill  onClick={() => alert("I wrote a web server in Go, but it's not public! Email me at elliotpotter496@gmail.com, and I'll add you to the repository!")}>
+                                *Go,</Skill> <Skill  onClick={() => window.location.href="https://github.com/averageflamethrowerguy/name-anagrams"}>
+                                Java,</Skill> <Skill onClick={() => window.location.href="https://github.com/BoxianWang/cs77-final-project"}>
                                 CUDA,</Skill> <Skill  onClick={() => alert("I designed my own 32-bit CPU that runs my own assembly, but it's not public! Email me at elliotpotter496@gmail.com, and I'll add you to the repository!")}>
                                 *Assembly,</Skill> <Skill onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
                                 HTML,</Skill> <Skill  onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
@@ -71,8 +71,12 @@ export function CredentialsPanel() {
 
                     <CredentialElement>
                         <CredentialsSubHeader>Other</CredentialsSubHeader>
-                        <div><Skill onClick={() => window.location.href="https://github.com/perfect10-dating/perfect10-api"}>MongoDB,</Skill> 
-                        [TODO]SQL, [TODO]GraphQL, [TODO]Kubernetes, [TODO]Docker, AWS, Azure, GCP</div>
+                        <div><Skill onClick={() => window.location.href="https://github.com/perfect10-dating/perfect10-api"}>
+                        MongoDB,</Skill> <Skill  onClick={() => alert("The SQL project is not public! Email me at elliotpotter496@gmail.com to ask me for access.")}>
+                        *SQL,</Skill> <Skill onClick={() => alert("The GraphQL project is not public! Email me at elliotpotter496@gmail.com to ask me for access.")}>
+                        *GraphQL</Skill> <Skill onClick={() => alert("The Kubernetes project is not public! Email me at elliotpotter496@gmail.com to ask me for access.")}>
+                        *Kubernetes,</Skill> <Skill onClick={() => alert("The Docker project is not public! Email me at elliotpotter496@gmail.com to ask me for access.")}>
+                        *Docker,</Skill> AWS, Azure, GCP</div>
                     </CredentialElement>
                 </CredentialsSubcontainer>
             </div>

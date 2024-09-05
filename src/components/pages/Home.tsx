@@ -30,12 +30,14 @@ export function Home() {
                 Hello! I'm Elliot, an entrepreneur, amateur bodybuilder, endurance hiker, and recent graduate from Dartmouth College. 
                 With a history of work in ultra-small, high-velocity startups, I'm looking to bring the same energy to a more mature
                 company.
+
+                If I mention a work experience or skill, click on it to see more details!
             </MiddleContainer>
 
             <TextHeader>In Brief</TextHeader>
             <CredentialsPanel />
 
-            <TextHeader>My Story</TextHeader>
+            <TextHeader id="my_story">My Story</TextHeader>
             <div>
                 <LeftText onClick={() => {
                     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -85,6 +87,19 @@ export function Home() {
                     and backend infrastructure, enabling it to handle a significant increase in website traffic without substantially raising costs. These 
                     enhancements later proved valuable as YayNay sought to attract high-profile clients.
                 </RightText>
+
+                <LeftText  onClick={() => {
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    navigate('/academics')
+                    }}>
+                    When I returned to Dartmouth, I decided to expand my programming skills by completing the Computer Science major. I discovered a 
+                    love for complex systems, algorithms, robotics, and a knack for leading teams in building impressive systems. While at Dartmouth,
+                    I spent many of my weekends leading groups of 3-12 students on hiking trips in the White Mountains.
+
+                    <ImageContainer>
+                        <img src={dartmouth_logo} style={{width: 100, height: 60, marginRight: -20, marginLeft: -20}} />
+                    </ImageContainer>
+                </LeftText>
             </div>
         </div>
 

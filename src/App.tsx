@@ -5,6 +5,7 @@ import {Home} from './components/pages/Home'
 import {Qbraid} from './components/pages/qBraid'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Academics } from './components/pages/Academics';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/qbraid" element={<Qbraid/>}/>
+          <Route path="/academics" element={<Academics/>}/>
         </Routes>
       </Router>
     </div>

@@ -10,9 +10,21 @@ export function TopBar() {
           navigate('/')
           document.body.scrollTop = document.documentElement.scrollTop = 0;
         }}>Elliot Potter</BarContainerElement>
-        <BarContainerElement>Work</BarContainerElement>
-        <BarContainerElement>Academics</BarContainerElement>
-        <BarContainerElement>Volunteering</BarContainerElement>
+        <BarContainerElement onClick={async () => {
+          navigate('/')
+
+          await new Promise(resolve => setTimeout(resolve, 200))
+          
+          const el = document.getElementById("my_story");
+          if (el) {
+            el.scrollIntoView()
+          }
+        }}>Work</BarContainerElement>
+        <BarContainerElement onClick={() => {
+          navigate('/academics')
+          document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }}>Academics</BarContainerElement>
+        {/* <BarContainerElement>Volunteering</BarContainerElement> */}
         <BarContainerElement>Fun</BarContainerElement>
       </BarContainerRight>
   </BarContainer>

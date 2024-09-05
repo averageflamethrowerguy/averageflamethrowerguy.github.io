@@ -50,8 +50,7 @@ export function CredentialsPanel() {
                                 *Go,</Skill> <Skill  onClick={() => alert("I wrote a hidden Markov model in Java, but it's not public! Email me at elliotpotter496@gmail.com, and I'll add you to the repository!")}>
                                 *Java,</Skill> <Skill onClick={() => window.location.href="https://github.com/BoxianWang/cs77-final-project"}>
                                 CUDA,</Skill> <Skill  onClick={() => alert("I designed my own 32-bit CPU that runs my own assembly, but it's not public! Email me at elliotpotter496@gmail.com, and I'll add you to the repository!")}>
-                                *Assembly,</Skill> <Skill  onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
-                                [TODO]Bash,</Skill> <Skill onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
+                                *Assembly,</Skill> <Skill onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
                                 HTML,</Skill> <Skill  onClick={() => window.location.href="https://github.com/averageflamethrowerguy/averageflamethrowerguy.github.io"}>
                                 CSS</Skill>
                         </div>

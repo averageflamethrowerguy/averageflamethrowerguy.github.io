@@ -59,3 +59,33 @@ export const ImageContainer = styled.image`
     margin-left: 20px;
     margin-right: 20px;
 `
+
+export const ProjectContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-wrap: wrap;
+`
+
+export const IndividualProject = styled.div`
+    padding: 5px;
+    margin: -5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px lightblue;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+    max-width: 450px;`
+
+export const ProjectDescription = styled.div`
+    width: calc(100% - 150px);
+`
+
+export const ProjectElement = styled.div`
+    width: 150px;
+    margin-left: 15px;
+`

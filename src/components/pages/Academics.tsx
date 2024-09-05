@@ -1,7 +1,6 @@
-import { BodyContainer, MiddleContainer, TextHeader } from "../elements/CommonElements";
+import { BodyContainer, MiddleContainer, ProjectContainer, ProjectDescription, ProjectElement, TextHeader } from "../elements/CommonElements";
 import { TopBar } from "../elements/TopBar";
 import { CredentialsHeader, CredentialsSubcontainer, CredentialsSubHeader } from "./CredentialsPanel";
-import { IndividualProject, ProjectContainer, ProjectDescription, ProjectElement } from "./qBraid";
 import styled from 'styled-components'
 
 export function Academics() {

@@ -25,7 +25,11 @@ export function TopBar() {
           document.body.scrollTop = document.documentElement.scrollTop = 0;
         }}>Academics</BarContainerElement>
         {/* <BarContainerElement>Volunteering</BarContainerElement> */}
-        <BarContainerElement>Fun</BarContainerElement>
+
+        <BarContainerElement onClick={() => {
+          navigate('/projects')
+          document.body.scrollTop = document.documentElement.scrollTop = 0;}}
+          >Projects</BarContainerElement>
       </BarContainerRight>
   </BarContainer>
 }
